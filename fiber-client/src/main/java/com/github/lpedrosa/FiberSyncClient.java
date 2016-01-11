@@ -1,11 +1,8 @@
+package com.github.lpedrosa;
+
 import co.paralleluniverse.fibers.FiberAsync;
 import co.paralleluniverse.fibers.SuspendExecution;
 import co.paralleluniverse.fibers.Suspendable;
-
-import com.github.lpedrosa.AsyncClient;
-import com.github.lpedrosa.Callback;
-import com.github.lpedrosa.ClientException;
-import com.github.lpedrosa.SyncClient;
 
 public class FiberSyncClient implements SyncClient {
 

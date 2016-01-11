@@ -1,3 +1,5 @@
+package com.github.lpedrosa;
+
 import co.paralleluniverse.fibers.Fiber;
 import co.paralleluniverse.fibers.SuspendExecution;
 import co.paralleluniverse.strands.Strand;
@@ -8,10 +10,6 @@ import java.util.concurrent.ExecutionException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.github.lpedrosa.AsyncClient;
-import com.github.lpedrosa.AsyncClientImpl;
-import com.github.lpedrosa.ClientException;
 
 public class Application {
     private static final Logger LOG = LoggerFactory.getLogger(Application.class);
@@ -46,7 +44,7 @@ public class Application {
         f.setUncaughtExceptionHandler(new UncaughtExceptionHandler() {
             @Override
             public void uncaughtException(Strand f, Throwable e) {
-                LOG.error("[fiber:{}] Application failed with error:", f, e);
+                LOG.error("[fiber:{}] com.github.lpedrosa.Application failed with error:", f, e);
             }
         });
 
