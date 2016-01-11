@@ -1,0 +1,3 @@
+rootProject.name = 'quasar-suspendables'
+
+include 'client', 'fiber-client'
